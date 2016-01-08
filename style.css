@@ -5,3 +5,10 @@ Author URI: http://kraenbech.dk
 Version: 1.0
 Tags: bootstrap, responsive
 */
+
+@import url('css/bootstrap.css');
+@import url('css/bootstrap-responsive.css'); 
+body {
+     padding-top: 60px;
+     padding-bottom: 40px;
+}

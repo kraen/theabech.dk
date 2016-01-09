@@ -32,6 +32,8 @@
         </div><!--/.nav-collapse -->
       </div>
   </div>
+  <div class="divider"></div>
+  <!--
   <div id="blogHeader">
     <div class="dark-overlay vision">
       <div class="centered vision-border">
@@ -40,3 +42,4 @@
       </div>
     </div>
   </div>
+-->

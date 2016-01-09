@@ -25,7 +25,7 @@ ol, ul {
 .navbar-default {
 	padding: 25px 0;
 	border: 0;
-	background-color: transparent;
+	background-color: #222;
 }
 
 .navbar-shrink {
@@ -86,7 +86,6 @@ ol, ul {
 	width: 100%;
 	height: 5px;
 	padding-top: 80px;
-	border-bottom: 2px dashed #000000;
 	position: relative;
 }
 
@@ -104,9 +103,8 @@ ol, ul {
 .footer {
 	letter-spacing: 2px;
 	padding-top: 45px;
-	background-color: #222;
 	height: 95px;
-	color: #ffffff;
+	color: #222;
 	font-size: 10px;
 	text-align: center;
 	float: left;

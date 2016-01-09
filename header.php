@@ -12,9 +12,9 @@
     <?php wp_head(); ?>
   </head>
   <body>
-  <div class="navbar navbar-default">
+  <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-        <div class="navbar-header">
+        <div class="navbar-header page-scroll">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -24,11 +24,19 @@
           <a class="navbar-brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
         </div>
         <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav navbar-right">
 
               <?php wp_list_pages(array('title_li' => '')); ?>
 
           </ul>
         </div><!--/.nav-collapse -->
       </div>
+  </div>
+  <div id="blogHeader">
+    <div class="dark-overlay vision">
+      <div class="centered vision-border">
+        <h2 class="text-uppercase"><?php bloginfo('name'); ?></h2>
+        <h6><?php bloginfo('description'); ?></h6>
+      </div>
+    </div>
   </div>

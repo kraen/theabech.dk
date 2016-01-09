@@ -3,7 +3,6 @@
   <div class="row">
   <?php if ( have_posts() ) : ?>
 
-    <?php /* Start the Loop */ $count = 0; $row_count=0 ?>
     <?php while ( have_posts() ) : the_post(); ?>
 
         <div id="post-<?php the_ID(); ?>" <?php post_class("blog-post"); ?>>
@@ -38,11 +37,14 @@
         <div class="divider"></div>
         </div>
   <?php endwhile; ?>
-  <nav>
-    <ul class="pager">
-      <li class="previous"><?php next_posts_link( 'Older posts' ); ?></li>
-      <li class="next"><?php previous_posts_link( 'Newer posts' ); ?></li>
-    </ul>
+  <nav class="text-center">
+    <?php
+    if (function_exists("wp_bs_pagination"))
+  {
+       //wp_bs_pagination($the_query->max_num_pages);
+       wp_bs_pagination();
+}
+    ?>
   </nav>
   <?php else: ?>
     <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>

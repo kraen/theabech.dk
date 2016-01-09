@@ -90,6 +90,13 @@ ol, ul {
 	position: relative;
 }
 
+.divider-page {
+	width: 100%;
+	height: 5px;
+	padding-top: 80px;
+	position: relative;
+}
+
 .pager {
 	padding-top: 80px
 }

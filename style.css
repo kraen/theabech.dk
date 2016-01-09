@@ -6,9 +6,93 @@ Version: 1.0
 Tags: bootstrap, responsive
 */
 
-@import url('css/bootstrap.css');
-@import url('css/bootstrap-responsive.css'); 
-body {
-     padding-top: 60px;
-     padding-bottom: 40px;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+
+article.archive .article-rest {
+  margin: auto;
+}
+.featured-thumb {
+  margin: auto;
+  margin-top: 35px;
+  overflow: hidden;
+  width: 95%;
+  padding: 0px;
+}
+.featured-thumb .img-meta {
+  position: absolute;
+  z-index: 9999;
+  background: rgba(0, 210, 222, 0.5);
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  display: none;
+  text-align: center;
+}
+.featured-thumb .img-meta .meta-icon {
+  display: inline-block;
+  font-size: 24px;
+  width: 36px;
+  background: #00595e;
+  border-radius: 4px;
+  margin-top: 150px;
+}
+.featured-thumb .img-meta .meta-link {
+  padding: 15px 25px;
+  color: #00bfc9;
+  padding-left: 26px;
+}
+.featured-thumb .img-meta .meta-link:hover {
+  color: #02f2ff;
+  text-decoration: none;
+}
+.featured-thumb .img-meta .meta-link i {
+  position: relative;
+  left: -19px;
+}
+.featured-thumb .img-meta .meta-link .icon-link {
+  left: -17px;
+}
+.featured-thumb .img-meta .img-meta-img .meta-link {
+  padding-left: 24px;
+}
+.featured-thumb:hover .img-meta {
+  background: rgba(0, 210, 222, 0.65);
+}
+.featured-thumb:hover img {
+  -webkit-transform: scale(1.05);
+  opacity: 0.98;
+}
+.featured-thumb img {
+  box-shadow: 0px 1px 2px #444;
+  margin-bottom: 0px;
+  transition: 0.4s all ease;
+  min-width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 1200px) {
+	.featured-thumb {
+		min-height: 207px !important;
+		overflow: hidden;
+	}
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.featured-thumb {
+		min-height: 170px !important;
+		overflow: hidden;
+	}
 }

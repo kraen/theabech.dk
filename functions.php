@@ -1,7 +1,6 @@
 <?php
 
 add_theme_support( 'post-thumbnails' );
-add_image_size('featured-thumb',750,550,true);
 
 function wpbootstrap_scripts()
 {

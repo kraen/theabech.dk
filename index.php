@@ -22,7 +22,7 @@
               <div class="featured-thumb">
                 <a href="<?php the_permalink(); ?>">
                   <?php
-                  the_post_thumbnail('featured-thumb', array( 'class' => 'img-responsive' ));
+                  the_post_thumbnail('large', array( 'class' => 'img-responsive' ));
                   ?>
                 </a>
               </div>

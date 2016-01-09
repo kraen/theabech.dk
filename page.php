@@ -12,7 +12,7 @@
 
         <?php if (has_post_thumbnail()) : ?>
         <div class="featured-thumb">
-            <?php the_post_thumbnail('featured-thumb', array( 'class' => 'img-responsive' )); ?>
+            <?php the_post_thumbnail('large', array( 'class' => 'img-responsive' )); ?>
         </div>
         <?php endif; ?>
         <div class="entry-summary">

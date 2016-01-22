@@ -24,7 +24,7 @@
           <a class="navbar-brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
         </div>
         <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav text-uppercase">
 
               <?php wp_list_pages(array('title_li' => '')); ?>
 
@@ -33,13 +33,10 @@
       </div>
   </div>
   <div class="divider"></div>
-  <!--
-  <div id="blogHeader">
-    <div class="dark-overlay vision">
-      <div class="centered vision-border">
-        <h2 class="text-uppercase"><?php bloginfo('name'); ?></h2>
-        <h6><?php bloginfo('description'); ?></h6>
-      </div>
+
+  <div class="container">
+    <div class="top-header">
+      <h1><?php bloginfo('name'); ?></h1>
+      <h4><?php bloginfo('description'); ?></h4>
     </div>
   </div>
--->

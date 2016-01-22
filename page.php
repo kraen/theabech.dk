@@ -7,7 +7,7 @@
     <div id="post-<?php the_ID(); ?>" <?php post_class("blog-post"); ?>>
       <div class="col-lg-8 col-lg-offset-2">
         <header class="entry-header">
-          <h1 class="entry-title text-center text-uppercase"><?php the_title(); ?></h1>
+          <h2 class="entry-title text-center text-uppercase"><?php the_title(); ?></h2>
         </header><!-- .entry-header -->
 
         <?php if (has_post_thumbnail()) : ?>

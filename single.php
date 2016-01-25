@@ -28,7 +28,7 @@
               </div>
             <?php endif; ?>
 
-            <div class="entry-summary">
+            <div class="entry-content">
               <?php the_content(); ?>
             </div><!-- .entry-summary -->
           </div>
@@ -39,8 +39,8 @@
   <?php endwhile; ?>
   <nav>
     <ul class="pager">
-      <li class="previous"><?php next_post_link('%link', '&larr; %title'); ?></li>
-      <li class="next"><?php previous_post_link('%link', '%title &rarr;'); ?></li>
+      <li class="previous"><?php next_post_link('%link', '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> %title'); ?></li>
+      <li class="next"><?php previous_post_link('%link', '%title <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>'); ?></li>
     </ul>
   </nav>
   <?php else: ?>

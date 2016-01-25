@@ -1,5 +1,7 @@
   <div class="footer">
-    <p>&copy; Thea Bech-Petersen.<br/>Design af Kræn Bech-Petersen.</p>
+    <footer>
+      <p>&copy; Thea Bech-Petersen.<br/>Design af Kræn Bech-Petersen.</p>
+    </footer>
   </div>
 <?php wp_footer(); ?>
 

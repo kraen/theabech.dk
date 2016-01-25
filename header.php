@@ -8,7 +8,8 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+    <script src="https://use.typekit.net/rpu4uuk.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <?php wp_head(); ?>
   </head>
   <body>
@@ -39,4 +40,8 @@
       <h1><?php bloginfo('name'); ?></h1>
       <h4><?php bloginfo('description'); ?></h4>
     </div>
+  </div>
+
+  <div class="slider">
+    <?php featured_slider(); ?>
   </div>
